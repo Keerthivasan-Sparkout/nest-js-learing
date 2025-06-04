@@ -30,8 +30,8 @@ export class StudentService{
     }
 
     
-    updateStudent(createStudentDto:CreateStudentDto){
-        return this.studentRepository.update(createStudentDto.id,createStudentDto);
+    updateStudent(id:number,createStudentDto:CreateStudentDto){
+        return this.studentRepository.update(id,createStudentDto);
     }
 
     deleteStudent( id:number){
